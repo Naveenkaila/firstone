@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import PrimarySearchAppBar from './components/header.tsx'
+import Footer from './components/footer.tsx';
+import SignUp from './components/SignUp.tsx';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+     
+     
+   
+      
+  <PrimarySearchAppBar/>
+<SignUp/>
+
+
+  <Footer/>
+
     </div>
   );
 }
