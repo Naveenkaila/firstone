@@ -3,7 +3,7 @@
   overflow-x:hidden;
 }
 html,body{
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;
