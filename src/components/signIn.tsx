@@ -3,14 +3,20 @@ import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PasswordIcon from '@mui/icons-material/Password';
+import SignUp from './SignUp';
+import Box from '@mui/material/Box';
+
+import Modal from '@mui/material/Modal';
 const SIGNIN = () =>{
     const [userName, setuserName]=useState(' ');
     const [password,setpassword]=useState('');
 
-
 const handleData=(e)=>{
 
 e.preventDefault()
+
+
+
 console.log("handledata is called")
 console.log(userName);
 console.log(password);
@@ -18,10 +24,10 @@ console.log(password);
 return(
 <div> 
 <Card>
-
+<div className='form_validation'>
 <center>
 <h5>
-  SIGNIN FORM  
+  Signin form 
 </h5>
 <form>
     <span>
@@ -40,6 +46,7 @@ return(
 </button>
     </form>
     </center>
+    </div>
     </Card>
     </div>
 )

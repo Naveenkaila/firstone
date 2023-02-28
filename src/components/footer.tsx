@@ -24,10 +24,12 @@ const Footer=()=>{
             </div>
             <div className='col-md-4'>
           <h6>follow us</h6>
+          <div className='icons'>
           <FacebookIcon/>
          <EmailIcon/>
          <InstagramIcon/>
          <WhatsAppIcon />
+         </div>
             </div>
             
             </div>  

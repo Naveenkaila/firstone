@@ -1,11 +1,24 @@
 button {
-    bottom: auto;
-    margin: 10px;
-    background-color: darkblue;
-    color: white;
-    border: none;
-    padding: 3px 21px 4px 20px;
+  bottom: auto;
+  margin: 10px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 3px 21px 3px 20px;
+  margin: 13px !important;
+  border-radius: 100px !important;
 }
 button:hover{
   background-color: green;
+}
+.form_validation {
+  background-color: #cfd3e5;
+}
+.form_validation h5 {
+  font-size: 35px !important;
+  background-color: #dc3545;
+  text-shadow: 1px 3px 1px #fff;
+}
+form {
+  margin: 26px 0px 0px 0px;
 }

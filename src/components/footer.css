@@ -1,9 +1,20 @@
-.footer{
+.footer {
     background-color: black;
-    color:#fff;
+    color: #eafd6c;
     bottom: 0;
-    position:absolute;
     width: 100%;
-    height: 140px;
     top: 43rem;
 }
+
+ .footer h6 {
+    text-decoration: underline;
+    font-size: 22px;
+}
+.icons {
+    display: inline-grid;
+    grid-gap: 14px;
+}
+
+  
+   
+

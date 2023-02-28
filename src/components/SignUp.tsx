@@ -4,8 +4,8 @@ import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
-import PasswordIcon from '@mui/icons-material/Password';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LockIcon from '@mui/icons-material/Lock';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import './signup.css'
 
@@ -20,6 +20,13 @@ const SignUp = () =>{
 const handleData=(e)=>{
 
 e.preventDefault()
+
+if(password1==password2){
+    console.log(password1)
+}
+else{
+    alert("error message");
+}
 console.log("handledata is called")
 console.log(name)
 console.log(mail)
@@ -37,10 +44,10 @@ setPassword2('');
         <div>
        
 <Card>
-   
+   <div className='form_validation'>
 <center>
     <h5>
-      SIGNUP FORM  
+      Signup form 
     </h5>
     <form>
 <span>
@@ -54,12 +61,12 @@ setPassword2('');
 </span>
 <br/>
 <span>
-    < LocalPhoneIcon/>
+    < PhoneAndroidIcon/>
 <TextField  onChange={(e)=>{setNumber(e.target.value)}}value={number} placeholder="enter your phone number" variant="filled" />
 </span>
 <br/>
 <span>
-    <PasswordIcon/>
+    <LockIcon />
 <TextField onChange={(e)=>{setPassword1(e.target.value)}}value={password1} type="password" placeholder="enter your password" variant="filled" />
 <br/>
 <LockOpenIcon/>
@@ -71,9 +78,12 @@ setPassword2('');
 </button>
 </form>
 </center>
+</div>
 </Card>
 
         </div>
     )
 }
+
+
 export default SignUp;
